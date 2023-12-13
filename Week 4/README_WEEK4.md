@@ -7,7 +7,12 @@
 
 \f0\fs24 \cf0 Week 2
 
+Experimentign and diving into the ROC Curve: 
+The ROC curve is a graphical representation of the performance of a binary classification model across different classification thresholds.
+It plots the True Positive Rate (Sensitivity) against the False Positive Rate (1 - Specificity) for various threshold values.
+The diagonal line represents random chance, and the goal is for the ROC curve to be as far away from this line as possible. (Except being below, then it would be worse than chance)
 
-ddddd
+AUC quantifies the overall performance of a classification model. It represents the area under the ROC curve.
+AUC values range from 0 to 1. A model with perfect discrimination has an AUC of 1, while a model with that is similar to random chance has an AUC of 0.5.
 
 }
