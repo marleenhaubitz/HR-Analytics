@@ -26,7 +26,10 @@ Lower AIC indicates a better balance between fit and simplicity.
 Null deviance is basically the deviance of the Model that consists of only the constant. For the R sqaured we use the deviance of our model
 and the Null deviance to calcultate R^2. 
 
-\\[ R^2 = 1 - \frac{{\text{{Sum of Squared Residuals}}}}{{\text{{Total Sum of Squares}}}} \]
+$$
+R^2 = 1 - \frac{{\text{{Sum of Squared Residuals}}}}{{\text{{Total Sum of Squares}}}}
+$$
+
 
 
 
