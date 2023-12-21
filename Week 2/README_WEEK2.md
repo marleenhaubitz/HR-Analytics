@@ -29,6 +29,4 @@ and the Null deviance to calcultate R^2.
 \[ R^2 = 1 - \frac{{\text{{Sum of Squared Residuals}}}}{{\text{{Total Sum of Squares}}}} \]
 
 
-
-
 }
