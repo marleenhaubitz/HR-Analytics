@@ -1,5 +1,5 @@
 
-#Question: What happens if we increase or decrease the number of bootstrap samples (B)?
+# Question: What happens if we increase or decrease the number of bootstrap samples (B)?
 For this I use the Iris Dataset to see how the coefficients of a logistic regression change depending on the size of the 
 Bootstrapped samples. 
 
@@ -32,6 +32,6 @@ print(results)
 }
 
 
-#Conclusion
+# Conclusion
 I see that the coefficients stabilize around 100 bootstrapped samples. I think that this is still a relatively small number, however the
 Iris dataset is also known to be a clean dataset to work with, other sets might require larger sample sizes. 
