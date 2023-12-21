@@ -24,11 +24,9 @@ Lower AIC indicates a better balance between fit and simplicity.
 
 *What is the Relationship with R^2?*
 Null deviance is basically the deviance of the Model that consists of only the constant. For the R sqaured we use the deviance of our model
-and the Null deviance to calcultate R^2. 
-
-$$
-R^2 = 1 - \frac{{\text{{Sum of Squared Residuals}}}}{{\text{{Total Sum of Squares}}}}
-$$
+and the Null deviance to calcultate R^2.
+--> Formula for R^2 is: 1- (Deviance Fitted Model / Deviance Null Model) 
+This means that ideally I want the division to be small, so I want the Deviance of the fitted model to be small compared to the deviance of the Null model. so that the R^2 is larger. 
 
 
 
