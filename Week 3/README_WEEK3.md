@@ -1,13 +1,6 @@
-{\rtf1\ansi\ansicpg1252\cocoartf2758
-\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;}
-{\*\expandedcolortbl;;}
-\paperw11900\paperh16840\margl1440\margr1440\vieww30040\viewh18340\viewkind0
-\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+# Lasso Regression
 
-\f0\fs24 \cf0 Week 3
-
-Question: What do different lamdas in the lasso regression mean? 
+*What do different lamdas in the lasso regression mean?*
 Data here is an AirBNB dataset from Kaggle, split into training and test set, where I want to predict price. 
 
 
@@ -29,11 +22,12 @@ the parameter lamda controls the regularization strength, influencing the trade-
 Lower λ: weaker penalty, retaining more coefficients and potentially overfitting the data.
 
 We can see this in the performance of the model above: 
-##Prediction on training set (insample)
+
+#Prediction on training set (insample)
 predictions_lasso_min_training <- predict(lasso_price, newx = x_train, s = result.cv.lasso$lambda.min, type="response") 
 predictions_lasso_1se_training <- predict(lasso_price, newx = x_train, s = result.cv.lasso$lambda.1se, type="response")
 
-## prediction on test set
+#prediction on test set
 predictions_lasso_min <- predict(lasso_price, newx = x_test, s = result.cv.lasso$lambda.min, type="response") #Lasso
 length(predictions_lasso_min)
 predictions_lasso_1se<- predict(lasso_price, newx = x_test, s = result.cv.lasso$lambda.1se, type="response")
