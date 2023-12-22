@@ -1,9 +1,9 @@
 # Lasso Regression
 
 *What do different lamdas in the lasso regression mean?* \\
-Data here is an AirBNB dataset from Kaggle, split into training and test set, where I want to predict price. \
+Data here is an AirBNB dataset from Kaggle, split into training and test set, where I want to predict price. 
 
-\\
+\vspace{5pt}
 ####Lasso
 lasso_price <- glmnet(x_train, y_train, alpha=1, lambda = 10^seq(-2,6, length.out=50))
 result.cv.lasso <- cv.glmnet(x_train
