@@ -1,6 +1,7 @@
 # Lasso Regression
 
-*What do different lamdas in the lasso regression mean?* \\
+*What do different lamdas in the lasso regression mean?* 
+\vspace{5pt}
 Data here is an AirBNB dataset from Kaggle, split into training and test set, where I want to predict price. 
 
 \vspace{5pt}
@@ -17,7 +18,7 @@ result.cv.lasso <- cv.glmnet(x_train
 result.cv.lasso$lambda.min
 result.cv.lasso$lambda.1se
 
-\
+\vspace{5pt}
 the parameter lamda controls the regularization strength, influencing the trade-off between fitting the model to training data and maintaining small coefficients. Higher λ: more coefficients are exactly zero, simplifying the model.
 Lower λ: weaker penalty, retaining more coefficients and potentially overfitting the data.
 \
